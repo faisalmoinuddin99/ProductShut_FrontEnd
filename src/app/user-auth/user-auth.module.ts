@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     CommonModule
   ],
+
+  // exports is used to expose this component publicly to all other modules
   exports:[
     LoginComponent
   ]
