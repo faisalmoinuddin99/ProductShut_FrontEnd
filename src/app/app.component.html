@@ -1,14 +1,11 @@
 <h1>{{title}}</h1>
 
 
-<ng-template [ngIf]="color === 'red'">
-    <h1 style="color: red;">Red Color</h1>
-</ng-template>
-
-<ng-template [ngIf]="color === 'green'">
-    <h1 style="color: green;">Green Color</h1>
-</ng-template>
-
-<ng-template [ngIf]="color === 'blue'">
-    <h1 style="color: blue;">Blue Color</h1>
-</ng-template>
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">Green Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue Color</h1>
+    <h1 *ngSwitchCase="'orange'" style="color: orange;">Ornage Color</h1>
+    <h1 *ngSwitchCase="'sky-blue'" style="color: skyblue;">Sky Color</h1>
+    <h1 *ngSwitchDefault >Default Color</h1>
+</div>

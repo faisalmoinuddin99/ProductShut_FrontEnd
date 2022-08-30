@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Multiple condition or else if';
-
- show: boolean = false
-
- color = 'blue'
+  title: string = 'Switch Case';
+  color = ''
 }
