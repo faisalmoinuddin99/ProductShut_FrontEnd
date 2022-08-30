@@ -1,23 +1,16 @@
 <h1>{{title}}</h1>
-<button (click)="getName('faisal',8)">Click me1</button>
-<button (click)="getName('rahul', 9)">Click me2</button>
 
-<p>Counter Button clicked: {{counter}}</p>
-<button (click)="myCounter()">counter btn</button>
+<label>name: </label>
+<input type="text"
+#box
+name="username" id="userId" placeholder="enter name" 
+/>
 <br>
 <br>
-<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup" />
-<br>
-<br>
-<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="event keydown" />
-
-<br>
-<br>
-<input type="text" #box2 (blur)="getData(box2.value)" placeholder="event blur" />
-
-<br>
-<br>
-<input type="text" #box3 (input)="getData(box3.value)" placeholder="event input" />
-
-<h1 (mouseover)="getData('over')">Code step by step</h1>
-<h1 (mouseleave)="getData('leave')">faisal suleman</h1>
+<button (click)="getValue(box.value)">Click to get input Value</button>
+<button (click)="getValue(box.name)">Click to get name value</button>
+<button (click)="getValue(box.placeholder)">Click to get placeholder value</button>
+<button (click)="getValue(box.id)">Click to get id value</button>
+<p>
+ Box value is:  {{displayValue}}
+</p>

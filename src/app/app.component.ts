@@ -6,20 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Important Event in Angular';
-  counter = 1 
-  getName(name : string, time: number){
-    alert("function called " + name + " Time " + time)
-  }
+  title: string = 'Get Input Box Value';
 
-  myCounter(): Number{
-      this.counter = this.counter + 1 
-      return this.counter
-  }
-
-  getData(val : string){
-    console.warn(val);
-    
+  displayValue: string = ''
+  getValue(val: string){
+    console.log(val);
+    this.displayValue = val ;
   }
 
 }
