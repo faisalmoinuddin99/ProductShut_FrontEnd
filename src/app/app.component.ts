@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
-  data = "Step by step process"
+  title = 'Important Event in Angular';
   counter = 1 
   getName(name : string, time: number){
     alert("function called " + name + " Time " + time)
@@ -17,4 +16,10 @@ export class AppComponent {
       this.counter = this.counter + 1 
       return this.counter
   }
+
+  getData(val : string){
+    console.warn(val);
+    
+  }
+
 }
