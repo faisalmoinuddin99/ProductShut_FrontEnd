@@ -6,28 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Nested   Loop in Angular';
-  
-  usersDetails = [{
-    name: 'Messi',
-    email: 'messi@gmail.com',
-    phone:8888,
-    socialAccounts: ["Facebook","Twitter","Instagram"]
-  },{
-    name: 'Ronaldo',
-    email: 'ronaldo@yahoo.com',
-    phone:11111,
-    socialAccounts: ["Whatsapp","Twitter","Instagram"]
-  },{
-    name: 'Neymar',
-    email: 'neymar@hotmail.com',
-    phone:11111,
-    socialAccounts: ["Whatsapp","Instagram"]
+  title: string = 'Style Binding';
+  color = 'red'
+  bgColor='yellow'
 
-  },{
-    name: 'Ramos',
-    email: 'ramos@yahoo.com',
-    phone:11119,
-    socialAccounts: ["Whatsapp","Instagram","Snapchat"]
-  }]
+  updateColor(){
+    if(this.color === 'red'){
+      this.color = 'blue'
+      this.bgColor= 'orange'
+    }else{
+      this.color= 'red'
+      this.bgColor= 'green'
+    }
+  }
 }
