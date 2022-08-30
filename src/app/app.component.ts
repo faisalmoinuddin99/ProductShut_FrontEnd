@@ -6,24 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Loop in Angular';
-  users = ['Messi', "Ronaldo", "Neymar", "Ramos", "DiMaria"]
-
+  title: string = 'Nested   Loop in Angular';
+  
   usersDetails = [{
     name: 'Messi',
     email: 'messi@gmail.com',
-    phone:8888
+    phone:8888,
+    socialAccounts: ["Facebook","Twitter","Instagram"]
   },{
     name: 'Ronaldo',
     email: 'ronaldo@yahoo.com',
-    phone:11111
+    phone:11111,
+    socialAccounts: ["Whatsapp","Twitter","Instagram"]
   },{
     name: 'Neymar',
     email: 'neymar@hotmail.com',
-    phone:11111
+    phone:11111,
+    socialAccounts: ["Whatsapp","Instagram"]
+
   },{
     name: 'Ramos',
     email: 'ramos@yahoo.com',
-    phone:11119
+    phone:11119,
+    socialAccounts: ["Whatsapp","Instagram","Snapchat"]
   }]
 }
