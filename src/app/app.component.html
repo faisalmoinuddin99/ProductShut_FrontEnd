@@ -1,11 +1,16 @@
 <h1>{{title}}</h1>
 
-<!-- Example of interpolation with properties -->
-<label >Interpolation: </label><input type="text" name="user-name" value={{name}} disabled={{disable}}>
 
-<br /><br />
-<!-- Example of property binding -->
-<label>Property Binding: </label><input type="text" name="user-name" [value]=name  [disabled]=disable>
+<h1 *ngIf="show ==show; then ifBlock else elseBlock">
+    my name is khan
+</h1>
 
-<button (click)="changeDisbale()">click me</button>
+<ng-template #ifBlock>
+    <h1>If condition</h1> 
+</ng-template>
+
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template>
+
 

@@ -8,15 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'Property Binding';
 
- name : string = "peter"
+ show: boolean = false
 
- disable: boolean = true 
-
- changeDisbale(){
-  if(this.disable === true){
-    this.disable = false
-  }else {
-    this.disable = true
-  }
- }
+ 
 }
