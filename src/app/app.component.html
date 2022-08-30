@@ -1,16 +1,9 @@
-<h1>{{title}}</h1>
+<h1 class="heading">{{title}}</h1>
 
-<label>name: </label>
-<input type="text"
-#box
-name="username" id="userId" placeholder="enter name" 
-/>
-<br>
-<br>
-<button (click)="getValue(box.value)">Click to get input Value</button>
-<button (click)="getValue(box.name)">Click to get name value</button>
-<button (click)="getValue(box.placeholder)">Click to get placeholder value</button>
-<button (click)="getValue(box.id)">Click to get id value</button>
-<p>
- Box value is:  {{displayValue}}
-</p>
+<!-- internal styling first preference -->
+<style>
+    .heading{
+        color: blue;
+    }
+</style>
+<app-login></app-login>

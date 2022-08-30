@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Get Input Box Value';
+  title: string = 'Basic Rule of Style';
 
   displayValue: string = ''
   getValue(val: string){
