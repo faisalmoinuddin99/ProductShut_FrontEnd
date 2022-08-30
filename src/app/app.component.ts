@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  data = "Step by step process"
+
+  getValue = ()=> "get arrow function data" ;
+
+  inc =  100
 }
