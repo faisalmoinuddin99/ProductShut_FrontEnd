@@ -1,9 +1,11 @@
-<h1 class="heading">{{title}}</h1>
+<h1>{{title}}</h1>
 
-<!-- internal styling first preference -->
-<style>
-    .heading{
-        color: blue;
-    }
-</style>
-<app-login></app-login>
+<!-- Example of interpolation with properties -->
+<label >Interpolation: </label><input type="text" name="user-name" value={{name}} disabled={{disable}}>
+
+<br /><br />
+<!-- Example of property binding -->
+<label>Property Binding: </label><input type="text" name="user-name" [value]=name  [disabled]=disable>
+
+<button (click)="changeDisbale()">click me</button>
+

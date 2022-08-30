@@ -6,12 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Basic Rule of Style';
+  title: string = 'Property Binding';
 
-  displayValue: string = ''
-  getValue(val: string){
-    console.log(val);
-    this.displayValue = val ;
+ name : string = "peter"
+
+ disable: boolean = true 
+
+ changeDisbale(){
+  if(this.disable === true){
+    this.disable = false
+  }else {
+    this.disable = true
   }
-
+ }
 }
