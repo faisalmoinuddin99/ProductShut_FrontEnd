@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'blog';
   data = "Step by step process"
 
-  getValue = ()=> "get arrow function data" ;
-
-  inc =  100
+  getName(name : string, time: number){
+    alert("function called " + name + " Time " + time)
+  }
 }
