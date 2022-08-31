@@ -9,9 +9,13 @@ import {NgForm} from '@angular/forms'
 export class AppComponent {
   title: string = 'Basic Form';
   formData: any ={};
+  display = true ;
 
   getData(data:NgForm){
     console.log(data);
     this.formData =  data
+  }
+  toggle(){
+    this.display = !this.display
   }
 }
