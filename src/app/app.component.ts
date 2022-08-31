@@ -10,13 +10,5 @@ export class AppComponent {
   color = 'red'
   bgColor='yellow'
 
-  updateColor(){
-    if(this.color === 'red'){
-      this.color = 'blue'
-      this.bgColor= 'orange'
-    }else{
-      this.color= 'red'
-      this.bgColor= 'green'
-    }
-  }
+ 
 }
