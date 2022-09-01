@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Two Way Bining';
+  title: string = 'Template Reference Variable';
 
- name: any  
+  getData(item: string){
+    console.log(item);
+    
+  }
 }
