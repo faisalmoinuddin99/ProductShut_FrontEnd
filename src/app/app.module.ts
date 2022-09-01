@@ -8,14 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button'
 import {MatBadgeModule} from '@angular/material/badge';
-import { ChildComponent } from './child/child.component'
+import { UserDetailsComponent } from './user-details/user-details.component';
+
 
 @NgModule({
 
   // used to register components
   declarations: [
     AppComponent,
-    ChildComponent,
+    UserDetailsComponent,
+ 
 
   ],
   // used to register modules

@@ -7,12 +7,20 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Send Data Parent to Child Component';
-  data1 = 10 ;
-  data2 = 20 ;
-  
-  updateChild(){
-    this.data1 = Math.floor(Math.random() * 10)
-    this.data2 = Math.ceil(Math.random() * 10)
-  }
+  title: string = 'Resusable Component';
+
+  userDeatils = [
+    {
+      name: 'Anil', email: "anil@test.com"
+    },
+    {
+      name: 'Rahul Sidhu', email: "sidhu@test.com"
+    },
+    {
+      name: 'Bhaskar Verma', email: "bhaskar@test.com"
+    },
+    {
+      name: 'Pere ', email: "peter@test.com"
+    }
+  ]
 }
