@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Angular Basic Pipes';
+  title: string = 'Angular Advance Pipes';
 
  today = Date()
 
  convertToUppercase(item : string){
   return item.toUpperCase()
+ }
+
+ user={
+  name: 'Anil',
+  age: 28
  }
 }
