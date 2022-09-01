@@ -1,6 +1,5 @@
-<h1>{{title}}</h1>
+<h1 class="head">{{title}}</h1>
 
-<ul *ngFor="let user of userDeatils">
-    <app-user-details [item]='user'></app-user-details>
-</ul>
+<app-child (updateDataEvent)="updateData($event)"></app-child>
 
+<p>{{receiveFromChild}}</p>
