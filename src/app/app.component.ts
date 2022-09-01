@@ -7,22 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Basic of TypeScript for Angular';
+  title: string = 'Angular Basic Pipes';
 
- // how to define object and array type data types
- data:{name: string, age: number, isActive: boolean} = {name: "jhon", age:23, isActive: true}
+ today = Date()
 
- item:string [] = ["bread", "butter", "egg"]
-
- loopOverArray(d:string []){
-  d.forEach(element => {
-    console.log(element);
-    
-  });
+ convertToUppercase(item : string){
+  return item.toUpperCase()
  }
-
- functionCall(){
-  this.loopOverArray(this.item)
- }
-
 }
