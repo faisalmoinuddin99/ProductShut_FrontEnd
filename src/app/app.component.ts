@@ -7,16 +7,12 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Todo List';
-  todoList : any[] = [] ;
-
-  addTask(item: string){
-   this.todoList.push({id: this.todoList.length, name: item})
-   console.log(this.todoList);
-   
-  }
-  removeFromList(id : number){
-   console.log(id);
-   this.todoList = this.todoList.filter(item => item.id == id) 
+  title: string = 'Send Data Parent to Child Component';
+  data1 = 10 ;
+  data2 = 20 ;
+  
+  updateChild(){
+    this.data1 = Math.floor(Math.random() * 10)
+    this.data2 = Math.ceil(Math.random() * 10)
   }
 }
