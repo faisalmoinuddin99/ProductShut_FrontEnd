@@ -1,51 +1,10 @@
-<app-header></app-header>
-<br>   
-<h1>{{title}}</h1> 
+<h1>{{title}}</h1>
+
+<input type="text" name="" #task placeholder="Enter New Task">
 <br>
-<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
-    <input type="text" name="user" ngModel placeholder="Enter User Name" id="" />
-    <br>
-    <br>
-    <input type="text" name="email" ngModel placeholder="Enter User Email" id="">
-    <br>
-    <br>
-    <input type="password" name="password" ngModel placeholder="Enter User Password" id="">
-    <br>
-    <br>
-    <button>register</button>
-</form>
-
-
-<ul>
-    <li>{{formData.user}}</li>
-    <li>{{formData.email}}</li>
-    <li>{{formData.password}}</li>
+<br>
+<button (click)="addTask(task.value)">Add Task</button>
+<br>
+<ul *ngFor="let item of todoList">
+  <li>{{item.name}} <button (click)="removeFromList(item.id)">Remove</button></li>
 </ul>
-<button (click)="toggle()">Toggle</button>
-<div *ngIf="display">
-    Heading Tag
-    <h5>Hello 5</h5>
-    <h4>Hello 4</h4>
-    <h3>Hello 3</h3>
-    <h2>Hello 2</h2>
-    <h1>Hello 1</h1>
-</div>
-
-<p>
-  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-<br>
-  <p>
-    Button with a badge on the left
-    <button mat-raised-button color="primary"
-        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
-      Action
-    </button>
-  </p>

@@ -7,15 +7,16 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Basic Form';
-  formData: any ={};
-  display = true ;
+  title: string = 'Todo List';
+  todoList : any[] = [] ;
 
-  getData(data:NgForm){
-    console.log(data);
-    this.formData =  data
+  addTask(item: string){
+   this.todoList.push({id: this.todoList.length, name: item})
+   console.log(this.todoList);
+   
   }
-  toggle(){
-    this.display = !this.display
+  removeFromList(id : number){
+   console.log(id);
+   this.todoList = this.todoList.filter(item => item.id == id) 
   }
 }
