@@ -7,13 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Send Data from Child to Parent Component';
+  title: string = 'Two Way Bining';
 
-  receiveFromChild  = ""
-
-  updateData(item : string){
-    console.log(item);
-    this.receiveFromChild = item
-  }
-
+ name: any  
 }
